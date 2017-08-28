@@ -110,10 +110,10 @@ module.exports = function (env) {
         },
 
         /**
-         * Extract and compile SCSS files from .src/styles directory to external CSS file
+         * Extract and compile SASS files from .src/styles directory to external CSS file
          */
         {
-          test: /\.scss$/,
+          test: /\.sass$/,
           loader: ExtractTextPlugin.extract({
             fallback: 'style-loader',
             use: 'css-loader!sass-loader'
